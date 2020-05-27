@@ -1,0 +1,18 @@
+header{
+    background-color: $primary;
+    display: flex;
+    justify-content: center;
+    h1{     // Instead of: header h1{}
+        color: $text-color;
+        &:hover{ // Instead of h1:hover{}
+            color: $secondary;
+            cursor: pointer;
+        }
+        &::before{ // Instead of h1::before{}
+            content: "Hi ";
+        }
+        &::after{ // Instead of h1::after{}
+            content: " Bye";
+        }
+    }
+}
